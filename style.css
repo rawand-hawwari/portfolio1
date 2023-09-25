@@ -1,0 +1,226 @@
+/* .navbar{
+    background-color: #99e799;
+} */
+/* 
+.hero{
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    opacity: 0.5;
+} */
+
+.navbar-toggler-icon{
+    color: white;
+    /* background-color: white; */
+}
+
+.hero-sec{
+    background: linear-gradient(-45deg, #97EAA9, #7BFFCF, #99E1A9, #72B199);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border-bottom-right-radius:150px;
+}
+
+.hero{
+    align-items: center;
+    justify-content: space-between;
+}
+
+img{
+    height: 300px;
+}
+
+.subtitle{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email{
+    text-decoration: none;
+    color: white;
+}
+.card .icon{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 50%;
+    background-color: #effbf9;
+}
+
+.card .icon img{
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.contact .info i{
+    font-size: 20px;
+    color: #157347;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #effbf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.contact .info a{
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio{
+    height: 22rem;
+}
+
+.portfolio a{
+    position: relative;
+    text-decoration: none;
+}
+
+.portfolio img{
+    width: 18rem;
+    height: 18rem;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+    opacity: 1;
+    border: 1px solid black;
+    transition: opacity 2s, width 2s, height 2s;
+}
+.portfolio a::after{
+    color: white;
+    position:absolute;
+    background-color: #000000;
+    left: 0;
+    bottom:-135px;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 2s, bottom 2s;
+    padding: 20px;
+}
+
+.portfolio a.project1::after{
+    content: "Ciné App";
+}
+
+.portfolio a.project2::after{
+    content: "ShopEe";
+}
+
+.portfolio a.project3::after{
+    content: "HU Map";
+}
+
+.portfolio img:hover{
+    box-shadow: 1px 1px 3px 3px #157347;
+    width: 22rem;
+    height: 22rem;
+}
+
+.portfolio a:hover::after
+{
+    /* top: 0; */
+    bottom: -167px;
+    opacity: 1;
+}
+
+.skill-icons .icon img{
+    height: 8rem;
+    width: 8rem;
+}
+
+.timeline {
+    position: relative;
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 2px;
+    height: 95%;
+    background-color: #e3e5e9;
+}
+.timeline li {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.timeline li::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -8px;
+    width: 18px;
+    height: 18px;
+    background-color: #157347;
+    box-shadow: 0 0 0 2px #157347;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+.timeline li .details {
+    background-color: #f4f5f8;
+    margin-top: 8px;
+    padding: 20px;
+    border-radius: 4px;
+}
+.timeline li .title {
+    width: 250px;
+    padding: 6px 20px;
+    background-color: #157347;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 30px 0 60px 30px;
+}
+/* 
+.overlay{
+    background-image: url(work3.png);
+    width: 18rem;
+    border-radius: 25%;
+} */
+
+/* .overlay{
+    position: absolute;
+    background-color: #656565;
+    height: 0%;
+    width: 18rem;
+    opacity: 0;
+    top: 0;
+    left: 100px;
+    border-radius: 25%;
+    transition: opacity 2s, height 2s;
+  }
+
+  @keyframes Overlay{
+    0% {opacity: 0;}
+    100% {opacity: 0.7;}
+  }
+
+  .portfolio .overlay:hover{
+    animation-name: overlay;
+    animation-duration: 4s;
+  } */
+/* 
+.portfolio::after{
+    width: 100%; height:100%;
+    position: absolute;
+    background-color: #656565;
+    transition: all 2s;
+    opacity: 0;
+}
+
+.portfolio:hover::after{
+    opacity: 0.7;
+} */
