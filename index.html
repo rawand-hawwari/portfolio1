@@ -10,23 +10,29 @@
         <!-- navbar  -->
         <nav class="navbar bg-light navbar-expand-lg border-bottom sticky-top navbar">
             <div class="container-fluid">
-              <span class="navbar-brand">iPortfolio</span>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-brand text-success">Rawand Hawwari</span>
+              <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link text-success" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link text-success" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link text-success" href="#services">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link text-success" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -39,7 +45,7 @@
                 <div class="content">
                     <h3>Welcome</h3>
                     <h1>I'm Rawand Al-Hawwari</h1>
-                    <h3>Web Developer</h3>
+                    <h3>Web Ddeveloper</h3>
                     <a href="#contact" type="button" class="btn btn-success btn-lg px-4 gap-3">Get in touch</a>
                 </div>
                 <img src=" img1.png">
@@ -47,9 +53,8 @@
         </div>
 
         <!-- about -->
-        <div id="about" class="about-sec container-fluid mb-3">
-            <div class="px-5 py-4 container-md text-center">
-            <h3 class="title pb-4">About me</h3>
+        <div id="about" class="about-sec container-md my-5 py-5">
+            <div class="px-5 py-5 container-md text-center my-5">
                 <div class="subtitle d-flex flex-column flex-md-row">
                     <img src=" img2.avif" class="me-md-5">
                     <div class="content text-start px-md-5">
@@ -63,39 +68,41 @@
         </div>
 
         <!-- services section -->
-        <div class="d-grid container-sm vertical-center text-center mb-3">
-            <h3 class="title pb-5">Services</h3>
-            <div class="row gx-3 gy-3" style=" justify-content:space-around; align-items:center; ">
-                <!-- servic card 1 -->
-                <div class="card col-sm-11 col-md-4 border-0 p-3" style="width: 18rem;">
-                    <div class="icon card-img-top col-sm-11 col-md-4 mx-auto d-flex justify-content-center align-items-center">
-                        <img class="card-img-top" src=" paint.png" alt="Card image cap">
+        <div id="services" class="d-grid container-md vertical-center text-center my-5 py-5">
+            <div class="container-md my-5">
+                <h3 class="title pb-5">Services</h3>
+                <div class="row gx-3 gy-3 py-5" style=" justify-content:space-around; align-items:center; ">
+                    <!-- servic card 1 -->
+                    <div class="card col-sm-11 col-md-4 border-0 p-3" style="width: 18rem;">
+                        <div class="icon card-img-top col-sm-11 col-md-4 mx-auto d-flex justify-content-center align-items-center">
+                            <img class="card-img-top" src=" paint.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Web Design</h5>
+                            <p class="card-text">Crafting captivating websites tailored to your brand.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Web Design</h5>
-                        <p class="card-text">Crafting captivating websites tailored to your brand.</p>
-                    </div>
-                </div>
 
-                <!-- servic card 2 -->
-                <div class="card col-sm-11 col-md-4  border-0 p-3" style="width: 18rem;">
-                    <div class="icon card-img-top col-sm-11 col-md-4 mx-auto d-flex justify-content-center align-items-center">
-                        <img class="card-img-top" src=" search.png" alt="Card image cap">
+                    <!-- servic card 2 -->
+                    <div class="card col-sm-11 col-md-4  border-0 p-3" style="width: 18rem;">
+                        <div class="icon card-img-top col-sm-11 col-md-4 mx-auto d-flex justify-content-center align-items-center">
+                            <img class="card-img-top" src=" search.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-success">SEO Optimize</h5>
+                            <p class="card-text">Enhance your online visibility and rankings through strategic SEO techniques.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-success">SEO Optimize</h5>
-                        <p class="card-text">Enhance your online visibility and rankings through strategic SEO techniques.</p>
-                    </div>
-                </div>
 
-                <!-- servic card 3 -->
-                <div class="card col-sm-11 col-md-4 border-0 p-3" style="width: 18rem;">
-                    <div class="icon card-img-top col-sm-11 col-md-4 mx-auto d-flex justify-content-center align-items-center">
-                        <img class="card-img-top" src=" desktop.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Web Development</h5>
-                        <p class="card-text">Transforming ideas into functional, user-friendly websites.</p>
+                    <!-- servic card 3 -->
+                    <div class="card col-sm-11 col-md-4 border-0 p-3" style="width: 18rem;">
+                        <div class="icon card-img-top col-sm-11 col-md-4 mx-auto d-flex justify-content-center align-items-center">
+                            <img class="card-img-top" src=" desktop.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Web Development</h5>
+                            <p class="card-text">Transforming ideas into functional, user-friendly websites.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,8 +185,7 @@
         <section id="contact" class="contact">
             <div class="container aos-init aos-animate" data-aos="fade-up">
               <div class="section-title container-sm vertical-center text-center mb-3">
-                <h3 class="title">Contact me</h3>
-                <p class="pb-5">Get in touch</p>
+                <h3 class="title pb-5">Contact me</h3>
               </div>
       
               <div>
@@ -219,14 +225,15 @@
         <footer class="py-3 my-4 bg-success  bg-opacity-75 text-center">
             <h3 class="title pb-4 text-light">Lets Connect</h3>
             <p class="text-light">Feel free to contact for collaborations and working of Projects</p>
-            <p class="text-light">email: <a href="mailto: Rawandh3@gmail.com" class="email">Rawandh3@gmail.com</a></p>
             <ul class="nav justify-content-center pb-3 mb-3">
+              <li class="nav-item"><a href="mailto: Rawandh3@gmail.com" target="_blank" class="nav-link px-2 text-muted"><i class="fa fa-envelope-o text-light"></i></a></li>
               <li class="nav-item"><a href="https://www.facebook.com/RawandKH.lill?mibextid=ZbWKwL" target="_blank" class="nav-link px-2 text-muted"><i class="fa fa-facebook text-light"></i></a></li>
               <li class="nav-item"><a href="https://instagram.com/rawand.sass?igshid=YTQwZjQ0NmI0OA==" target="_blank" class="nav-link px-2 text-muted"><i class="fa fa-instagram text-light"></i></a></li>
               <li class="nav-item"><a href="https://www.linkedin.com/in/rawand-al-hawwari-b46831227" target="_blank" class="nav-link px-2 text-muted"><i class="fa fa-linkedin text-light"></i></a></li>
               <li class="nav-item"><a href="https://github.com/rawand-hawwari" target="_blank" class="nav-link px-2 text-muted"><i class="fa fa-github text-light"></i></a></li>
             </ul>
-            <p class="text-center text-light">All Rights Reserved</p>
+            <hr>
+            <p class="text-center text-light"><i class="fa fa-copyright text-light"></i> 2023 Rawand-Hawwari All Rights Reserved</p>
         </footer>
 
         <!-- js link -->

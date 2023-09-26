@@ -1,43 +1,48 @@
-/* .navbar{
-    background-color: #99e799;
-} */
-/* 
-.hero{
-    background-image: url(background.png);
-    background-repeat: no-repeat;
-    opacity: 0.5;
-} */
-
-.navbar-toggler-icon{
-    color: white;
-    /* background-color: white; */
+/* navbar toggler icon */
+.custom-toggler.navbar-toggler {
+    border-color: #198754;
+}
+button:focus:not(:focus-visible){
+    color: #198754;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(25, 135, 84, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+.navbar-nav .nav-item .nav-link:focus:not(:focus-visible){
+    text-decoration: underline;
+}
+
+/* sections title */
+.title{
+    color: green;
+}
+
+/* hero section */
 .hero-sec{
-    background: linear-gradient(-45deg, #97EAA9, #7BFFCF, #99E1A9, #72B199);
+    background: linear-gradient(-45deg, #97EAA9, #44ffba, #3fff68, #72B199);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     border-bottom-right-radius:150px;
 }
-
 .hero{
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
+/* hero section and about section images */
 img{
     height: 300px;
 }
 
+/* about me subtitle */
 .subtitle{
     align-items: center;
     justify-content: space-between;
 }
 
-.email{
-    text-decoration: none;
-    color: white;
-}
+/* services section's cards */
 .card .icon{
     display: inline-block;
     width: 100px;
@@ -48,92 +53,19 @@ img{
     border-radius: 50%;
     background-color: #effbf9;
 }
-
 .card .icon img{
     align-items: center;
     width: 50%;
     height: 50%;
 }
 
-.contact .info i{
-    font-size: 20px;
-    color: #157347;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background: #effbf9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.contact .info a{
-    text-decoration: none;
-    color: black;
-}
-
-.portfolio{
-    height: 22rem;
-}
-
-.portfolio a{
-    position: relative;
-    text-decoration: none;
-}
-
-.portfolio img{
-    width: 18rem;
-    height: 18rem;
-    border-top-right-radius: 25%;
-    border-top-left-radius: 25%;
-    opacity: 1;
-    border: 1px solid black;
-    transition: opacity 2s, width 2s, height 2s;
-}
-.portfolio a::after{
-    color: white;
-    position:absolute;
-    background-color: #000000;
-    left: 0;
-    bottom:-135px;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 2s, bottom 2s;
-    padding: 20px;
-}
-
-.portfolio a.project1::after{
-    content: "Ciné App";
-}
-
-.portfolio a.project2::after{
-    content: "ShopEe";
-}
-
-.portfolio a.project3::after{
-    content: "HU Map";
-}
-
-.portfolio img:hover{
-    box-shadow: 1px 1px 3px 3px #157347;
-    width: 22rem;
-    height: 22rem;
-}
-
-.portfolio a:hover::after
-{
-    /* top: 0; */
-    bottom: -167px;
-    opacity: 1;
-}
-
+/* skills iocns */
 .skill-icons .icon img{
     height: 8rem;
     width: 8rem;
 }
 
+/* qualifications timeline */
 .timeline {
     position: relative;
     display: block;
@@ -165,8 +97,8 @@ img{
     left: -8px;
     width: 18px;
     height: 18px;
-    background-color: #157347;
-    box-shadow: 0 0 0 2px #157347;
+    background-color: #198754;
+    box-shadow: 0 0 0 2px #198754;
     border: 3px solid #fff;
     border-radius: 50%;
 }
@@ -179,15 +111,87 @@ img{
 .timeline li .title {
     width: 250px;
     padding: 6px 20px;
-    background-color: #157347;
+    background-color: #198754;
     color: #fff;
     font-weight: 500;
     border-radius: 30px 0 60px 30px;
     animation-name: timeline;
     animation-duration: 3s;
 }
-
+/* timeline's animation */
 @keyframes timeline{
     from {width: 50px; font-size: 0px;}
-    to {width: 250px; font-size: medium;}
+    to {width: 250px; font-size: medium;background-color: blue;}
 }
+
+/* recent work section */
+.portfolio{
+    height: 22rem;
+}
+.portfolio a{
+    position: relative;
+    text-decoration: none;
+}
+.portfolio img{
+    width: 18rem;
+    height: 18rem;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+    opacity: 1;
+    border: 1px solid black;
+    transition: opacity 2s, width 2s, height 2s;
+}
+.portfolio a::after{
+    color: white;
+    position:absolute;
+    background-color: #000000;
+    left: 0;
+    bottom:-135px;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 2s, bottom 2s;
+    padding: 20px;
+}
+.portfolio a.project1::after{
+    content: "Ciné App";
+}
+.portfolio a.project2::after{
+    content: "ShopEe";
+}
+.portfolio a.project3::after{
+    content: "HU Map";
+}
+.portfolio img:hover{
+    box-shadow: 1px 1px 3px 3px #157347;
+    width: 22rem;
+    height: 22rem;
+}
+.portfolio a:hover::after{
+    /* top: 0; */
+    bottom: -167px;
+    opacity: 1;
+}
+
+/* contact section */
+.contact .info i{
+    font-size: 20px;
+    color: #198754;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #effbf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.contact .info a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
