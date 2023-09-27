@@ -24,7 +24,7 @@ button:focus:not(:focus-visible){
 
 /* hero section */
 .hero-sec{
-    background: linear-gradient(-45deg, #97EAA9, #44ffba, #3fff68, #72B199);
+    background: linear-gradient(-45deg, #88d399, #7fd5b6, #75da8b, #72B199);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     border-bottom-right-radius:150px;
