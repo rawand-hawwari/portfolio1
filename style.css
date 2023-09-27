@@ -10,8 +10,11 @@ button:focus:not(:focus-visible){
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(25, 135, 84, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.navbar-nav .nav-item .nav-link:focus:not(:focus-visible){
-    text-decoration: underline;
+.navigation a{
+    color: green;
+    &:hover, &:focus, &:active{
+        text-decoration: underline;
+    }
 }
 
 /* sections title */
@@ -25,6 +28,17 @@ button:focus:not(:focus-visible){
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     border-bottom-right-radius:150px;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 .hero{
     align-items: center;
@@ -51,7 +65,7 @@ img{
     text-align: center;
     font-size: 32px;
     border-radius: 50%;
-    background-color: #effbf9;
+    background-color: rgba(25, 135, 84, 0.15);
 }
 .card .icon img{
     align-items: center;
@@ -60,6 +74,16 @@ img{
 }
 
 /* skills iocns */
+.skill-icons .icon i{
+    color: green;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 50%;
+    background-color: rgba(25, 135, 84, 0.15);
+}
 .skill-icons .icon img{
     height: 8rem;
     width: 8rem;
@@ -116,12 +140,12 @@ img{
     font-weight: 500;
     border-radius: 30px 0 60px 30px;
     animation-name: timeline;
-    animation-duration: 3s;
+    animation-duration: 4s;
 }
 /* timeline's animation */
 @keyframes timeline{
-    from {width: 50px; font-size: 0px;}
-    to {width: 250px; font-size: medium;background-color: blue;}
+    from {width: 50px; font-size: 0px; background-color: rgba(25, 135, 84, 0.15);}
+    to {width: 250px; font-size: medium;background-color: #198754;}
 }
 
 /* recent work section */
@@ -133,24 +157,26 @@ img{
     text-decoration: none;
 }
 .portfolio img{
-    width: 18rem;
-    height: 18rem;
-    border-top-right-radius: 25%;
-    border-top-left-radius: 25%;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 25%;
     opacity: 1;
     border: 1px solid black;
     transition: opacity 2s, width 2s, height 2s;
 }
 .portfolio a::after{
+    text-align: center;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
     color: white;
     position:absolute;
-    background-color: #000000;
+    background-color:#506f61;
     left: 0;
-    bottom:-135px;
+    bottom:-80px;
     opacity: 0;
     width: 100%;
     transition: opacity 2s, bottom 2s;
-    padding: 20px;
+    padding: 8px;
 }
 .portfolio a.project1::after{
     content: "Ciné App";
@@ -162,13 +188,13 @@ img{
     content: "HU Map";
 }
 .portfolio img:hover{
-    box-shadow: 1px 1px 3px 3px #157347;
-    width: 22rem;
-    height: 22rem;
+    box-shadow: 1px 1px 8px 8px #506f61;
+    width: 18rem;
+    height: 18rem;
 }
 .portfolio a:hover::after{
     /* top: 0; */
-    bottom: -167px;
+    bottom: -12px;
     opacity: 1;
 }
 
@@ -179,7 +205,7 @@ img{
     float: left;
     width: 44px;
     height: 44px;
-    background: #effbf9;
+    background: rgba(25, 135, 84, 0.15);
     display: flex;
     justify-content: center;
     align-items: center;
